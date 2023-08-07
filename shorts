@@ -1,14 +1,16 @@
 Editor -: visual studio code
-   Extensions for vs code -:
-     es7+react/redux/react-native snippets (help generet components)
-     prettier code formatter
-     javaScript(es6) code snipptes (used in console logs, try catch etc)
-     github Copilot
+Extensions for vs code -:
+es7+react/redux/react-native snippets (help generet components)
+prettier code formatter
+javaScript(es6) code snipptes (used in console logs, try catch etc)
+github Copilot
 git, nodejs(we need npm)
 post man
 React Devloper tool(extension on web browser)
 Redux dev tool (extension on web browser)
----------------------------------------------------------------
+
+---
+
 npx create-react-app frontend
 ls -a // to see hidden file
 rm -rf .git // remove the file .git
@@ -17,3 +19,19 @@ git add .
 git commit -m 'inital setup'
 git branch -M main
 git push -u oigin main
+
+---
+
+in the front end
+npm i react-bootstrap bootstrap react-icons
+it should be imported in the index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+Navbar bg='dark' variant='dark' expand='md'
+expand md shows the hamburger menu when the screen become too
+small. and lg shows all the time
+
+---
+
+In order to use react router it have to be installid in the frontend
+npm i react-router-dom
+npm i react-router-bootstrap. help up to have link inside the nav bar. since we don't use <a href> we can c
