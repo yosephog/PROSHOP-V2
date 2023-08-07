@@ -1,0 +1,19 @@
+Editor -: visual studio code
+   Extensions for vs code -:
+     es7+react/redux/react-native snippets (help generet components)
+     prettier code formatter
+     javaScript(es6) code snipptes (used in console logs, try catch etc)
+     github Copilot
+git, nodejs(we need npm)
+post man
+React Devloper tool(extension on web browser)
+Redux dev tool (extension on web browser)
+---------------------------------------------------------------
+npx create-react-app frontend
+ls -a // to see hidden file
+rm -rf .git // remove the file .git
+git init
+git add .
+git commit -m 'inital setup'
+git branch -M main
+git push -u oigin main
