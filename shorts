@@ -34,4 +34,27 @@ small. and lg shows all the time
 
 In order to use react router it have to be installid in the frontend
 npm i react-router-dom
-npm i react-router-bootstrap. help up to have link inside the nav bar. since we don't use <a href> we can c
+npm i react-router-bootstrap. help up to have link inside the nav bar. since we don't use <a href>
+
+---
+
+npm init in the proshop folder for the backend this will allow to create package.json file
+
+add type module on the package.json so we can use the es module like import osv
+
+npm i express in the proshop folder
+npm i -D nodemon concurrently
+-D for developement since we only use them in development
+nodemon so we dont have to restart the server for every change
+concurrently for starting the front end and backend togather
+
+"scripts": {
+"start": "node backend/server.js",
+"server": "nodemon backend/server.js",
+"client": "npm start --prefix frontend",
+"dev": "concurrently \"npm run server\" \"npm run client\""
+},
+scripts on the package.json
+
+npm i -D dotenv to hold the conviguration file
+npm i axios in the frontend for the api
