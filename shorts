@@ -62,3 +62,5 @@ npm i axios in the frontend for the api
 npm i mongoose
 npm i bcrypt.js in the proshop folder
 npm i colors
+
+in the front end npm i @reduxjs/toolkit react-redux
