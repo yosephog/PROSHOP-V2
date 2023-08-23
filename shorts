@@ -63,4 +63,7 @@ npm i mongoose
 npm i bcrypt.js in the proshop folder
 npm i colors
 
-in the front end npm i @reduxjs/toolkit react-redux
+in the front end
+npm i jsonwebtoken // on the rootfolder
+npm i cookie-parser
+npm i react-toastify // in the frontend
