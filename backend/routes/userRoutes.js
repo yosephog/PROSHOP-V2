@@ -11,13 +11,20 @@ import {
     getUserById,
     updateUser
 } from '../controllers/userController.js'
-import { getProductById } from "../controllers/productController.js";
+import {protect, admin} from '../middleware/awtMiddleware.js'
 
+router.route('/').post(registerUser)
+                 .get(protect, admin, getUsers)
 
-router.route('/').post(registerUser).get(getUsers)
 router.post('/logout', logoutUser)
-router.post('/login', authUser)
-router.route('/profile').get(getUserProfile).put(updateUserProfile)
-router.route('/:id').delete(deletUser).get(getUserById).put(updateUser)
+
+router.post('/auth', authUser)
+
+router.route('/profile').get(protect, getUserProfile)
+                        .put(protect,updateUserProfile)
+                        
+router.route('/:id').delete(protect, admin,deletUser)
+                    .get(protect, admin, getUserById)
+                    .put(protect, admin, updateUser)
 
 export default router
